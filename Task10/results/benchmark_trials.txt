@@ -1,25 +1,25 @@
 TRIAL 1
 Processes created and reaped: 1000
-fork+wait total seconds: 0.533009
+fork+wait total seconds: 0.320889
 Threads created and joined: 1000
-pthread total seconds: 0.122870
+pthread total seconds: 0.094307
 TRIAL 2
 Processes created and reaped: 1000
-fork+wait total seconds: 0.341828
+fork+wait total seconds: 0.244377
 Threads created and joined: 1000
-pthread total seconds: 0.078643
+pthread total seconds: 0.095379
 TRIAL 3
 Processes created and reaped: 1000
-fork+wait total seconds: 0.384751
+fork+wait total seconds: 0.195118
 Threads created and joined: 1000
-pthread total seconds: 0.077778
+pthread total seconds: 0.053093
 TRIAL 4
 Processes created and reaped: 1000
-fork+wait total seconds: 0.401715
+fork+wait total seconds: 0.173305
 Threads created and joined: 1000
-pthread total seconds: 0.073821
+pthread total seconds: 0.070645
 TRIAL 5
 Processes created and reaped: 1000
-fork+wait total seconds: 0.214245
+fork+wait total seconds: 0.175386
 Threads created and joined: 1000
-pthread total seconds: 0.073827
+pthread total seconds: 0.070942
