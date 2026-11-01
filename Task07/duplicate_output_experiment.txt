@@ -1,0 +1,5 @@
+Contents of redirected output:
+shell: running job 2
+shell: running job 2
+parent collected status 3
+The pre-fork buffered line is flushed once by child exit() and once by parent exit().

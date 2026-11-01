@@ -1,0 +1,2 @@
+# Evidence
+`TaskXX_output.txt` files are program outputs captured during package verification. Re-run the tasks on your own Ubuntu/WSL2 and regenerate them. `Task10/results/benchmark_trials.txt` contains five benchmark trials from the package preparation environment; replace it with your own five or more trials before using it as personal measurement evidence. `CAPTURE_EVIDENCE.sh` captures environment, output, strace and time logs when the required tools are installed.

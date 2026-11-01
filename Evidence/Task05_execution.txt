@@ -1,0 +1,9 @@
+Command: gcc -std=c11 -Wall -Wextra syscall_demo.c -o syscall_demo && printf 'hello from terminal\n' | ./syscall_demo
+Exit code: 0
+
+STDOUT:
+Smart hospital system-call demonstration
+You entered: hello from terminal
+
+STDERR:
+

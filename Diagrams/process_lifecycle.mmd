@@ -1,0 +1,10 @@
+stateDiagram-v2
+[*] --> Ready
+Ready --> Running: scheduler dispatch
+Running --> Waiting: blocking I/O
+Waiting --> Ready: I/O completion
+Running --> Ready: timer preemption
+Running --> Terminated: exit
+Terminated --> Zombie: parent has not waited
+Zombie --> Reaped: wait / waitpid
+Terminated --> Reaped: parent collects status

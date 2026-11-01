@@ -1,0 +1,10 @@
+flowchart TD
+A[Application calls read()] --> B[C library wrapper]
+B --> C[System-call ABI: number and arguments]
+C --> D[Trap / syscall instruction]
+D --> E[CPU enters kernel mode]
+E --> F[Kernel validates fd and user buffer]
+F --> G[File system / page cache / device]
+G --> H[Return value or error]
+H --> I[CPU returns to user mode]
+I --> J[Application continues]

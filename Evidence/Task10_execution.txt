@@ -1,0 +1,11 @@
+Command: gcc -std=c11 -Wall -Wextra -pthread process_thread_benchmark.c -o benchmark && ./benchmark
+Exit code: 0
+
+STDOUT:
+Processes created and reaped: 1000
+fork+wait total seconds: 0.383385
+Threads created and joined: 1000
+pthread total seconds: 0.060898
+
+STDERR:
+

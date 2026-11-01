@@ -1,0 +1,11 @@
+TASK 9 – I/O and DMA calculation
+Memory hierarchy: registers -> cache -> RAM -> SSD/NVMe -> HDD/archive -> network/object storage.
+MRI: RAM working buffers, fast local NVMe for recent scans, protected archive for retention.
+Patient records: replicated durable SSD/NVMe database with encrypted backups.
+Monitor readings: local real-time buffer/gateway then central time-series storage; alarm must stay local.
+
+For 500 MB (decimal) transferred one 4-byte word per interrupt:
+Total bytes = 500,000,000
+Interrupts = 500,000,000 / 4 = 125,000,000
+DMA transfers blocks using descriptors and typically requires far fewer completion interrupts.
+DMA requires safe buffer management, IOMMU protection where available and cache-coherency handling.

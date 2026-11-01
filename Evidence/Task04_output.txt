@@ -1,0 +1,26 @@
+TASK 4 – Operating-system services matrix
+Service | Monitor | Tablet | Workstation | Database
+UI | Minimal display/alarm | Touch UI | Full GUI | Minimal admin UI
+Program execution | Validated tasks only | Clinical apps | Clinical apps | DB engine
+I/O | Sensor I/O | Touch/radio | Keyboard/display/network | Storage/network
+File system | Small controlled config/logs | Encrypted app storage | Managed files | Durable DB files
+Communication | Deterministic device links | Wi-Fi/API | Hospital LAN | Cluster replication
+Error detection | Watchdog/sensor fault | App/radio errors | OS/app monitoring | DB/storage fault
+Resource allocation | Fixed-priority scheduling | Power-aware | General scheduler | CPU/RAM/I/O controls
+Accounting/logging | Safety event log | Device/audit logs | User audit | Transaction audit
+Protection | Process/device isolation | App sandbox | RBAC | DB roles
+Security | Secure boot/signed updates | MDM/MFA/encryption | EDR/MFA/patching | Encryption/backups
+
+Monitor services to minimise: desktop shell, printing, media, unrelated daemons, unnecessary network listeners.
+Never remove essential sensor I/O, watchdog, error detection, security, secure update or safety logging.
+Database essentials: program execution, file/storage I/O, communication, error detection, resource allocation, audit, protection and security.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

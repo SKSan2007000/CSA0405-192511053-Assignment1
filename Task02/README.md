@@ -1,0 +1,1 @@
+Run `python3 main.py`. It prints the selected OS type, rejected alternative, SMP/AMP comparison and single-host versus clustered database analysis. Complexity: O(E) output generation for E environments; O(E) storage.

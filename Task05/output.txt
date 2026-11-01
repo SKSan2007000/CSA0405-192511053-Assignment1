@@ -1,0 +1,2 @@
+Smart hospital system-call demonstration
+Input received: abnormal reading

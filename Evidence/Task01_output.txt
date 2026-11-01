@@ -1,0 +1,58 @@
+TASK 1 – Ranked requirements (highest priority first)
+
+Bedside monitors
+ 1. Deterministic response: Hard 10 ms alarm deadline
+ 2. Reliability: Fault detection and safe fallback
+ 3. Security: Secure boot and authenticated updates
+ 4. Resource footprint: Small memory and CPU footprint
+ 5. Connectivity: Local alarm must not depend on WAN
+
+Nurses' tablets
+ 1. Security: MFA, encryption and managed apps
+ 2. Battery life: Full-shift operation
+ 3. Wireless reliability: Roaming and offline queue
+ 4. Usability: Touch UI and fast access
+ 5. Performance: Responsive clinical apps
+
+Doctors' workstations
+ 1. Security: Role-based access and endpoint protection
+ 2. Availability: Access to clinical systems
+ 3. Responsiveness: Interactive UI
+ 4. Multitasking: EHR and imaging apps
+ 5. Manageability: Central patching
+
+Patient database
+ 1. Availability: Cluster fail-over and redundant paths
+ 2. Integrity/durability: Transactional storage and backups
+ 3. Security: Encryption, RBAC and audit
+ 4. Throughput: Concurrent clinical queries
+ 5. Recovery: Tested restore and disaster recovery
+
+MRI imaging server
+ 1. Throughput: Parallel image reconstruction
+ 2. I/O bandwidth: High-bandwidth scanner and storage
+ 3. Memory capacity: Large working sets
+ 4. Availability: Recoverable processing
+ 5. Security: Controlled image access
+
+Partner-hospital link
+ 1. Confidentiality/integrity: Authenticated encrypted exchange
+ 2. Availability: Redundant connectivity
+ 3. Interoperability: Agreed data formats/APIs
+ 4. Auditability: Traceable access
+ 5. Throughput: Efficient record synchronisation
+
+Alternative: one general-purpose OS everywhere
+- A general-purpose scheduler does not inherently guarantee the worst-case 10 ms alarm deadline.
+- A common desktop image increases the monitor's memory/storage footprint and background activity.
+- One OS may simplify patching, but device-specific tuning and exceptions remain; fit-for-purpose systems add platform diversity.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

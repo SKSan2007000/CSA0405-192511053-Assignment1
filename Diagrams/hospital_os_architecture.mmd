@@ -1,0 +1,9 @@
+flowchart TB
+M[Bedside monitors: hard RTOS] --> GW[Ward gateway]
+T[Nurses tablets: mobile OS] --> NET[Secure hospital network]
+W[Doctors workstations: desktop OS] --> NET
+GW --> NET
+NET --> DB[(Clustered patient-record database)]
+NET --> IMG[MRI imaging: SMP server]
+NET <--> PARTNER[Two partner hospitals: secure distributed APIs]
+DB --> BACKUP[(Encrypted backup / DR)]

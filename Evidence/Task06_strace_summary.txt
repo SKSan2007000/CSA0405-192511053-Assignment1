@@ -1,0 +1,1 @@
+strace was not available in this build environment. Run the supplied Task06/run.sh in Ubuntu/WSL2 to produce this evidence.

@@ -1,0 +1,19 @@
+TASK 8 – Detection latency model (illustrative assumptions)
+Required alarm deadline: 10.00 ms
+Assumed interrupt latency: 0.25 ms
+Polling interval  1 ms: worst detection wait up to 1.00 ms; within 10 ms only if other processing/scheduling delay leaves margin
+Polling interval  5 ms: worst detection wait up to 5.00 ms; within 10 ms only if other processing/scheduling delay leaves margin
+Polling interval 10 ms: worst detection wait up to 10.00 ms; does not meet 10 ms worst-case before other delays
+Polling interval 20 ms: worst detection wait up to 20.00 ms; does not meet 10 ms worst-case before other delays
+Interrupt-driven: approximate detection latency is interrupt latency plus handler, scheduling and processing time.
+Conclusion: interrupts avoid repeated polling and can reduce power, but the complete end-to-end path must be bounded and validated.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

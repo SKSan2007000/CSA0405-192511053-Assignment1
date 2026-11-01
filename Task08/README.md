@@ -1,0 +1,1 @@
+Run `python3 main.py`. This is a transparent timing model using an illustrative 0.25 ms interrupt latency and polling intervals; replace assumptions with measured device data. Complexity O(P) for P polling intervals.

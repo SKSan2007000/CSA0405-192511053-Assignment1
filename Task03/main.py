@@ -1,0 +1,13 @@
+structures = [
+("Monolithic","Low call overhead; large kernel trusted base; faulty kernel driver can crash system."),
+("Layered","Clear interfaces and easier reasoning; strict layers can add overhead."),
+("Microkernel","Small kernel and user-space servers improve isolation; IPC/message passing adds overhead."),
+("Modular","Loadable modules ease extension and updates; faulty kernel module can still crash kernel."),
+("Hybrid","Combines performance and modularity; larger trusted kernel than minimal microkernel.")
+]
+for name,detail in structures: print(f"{name}: {detail}")
+print("\nHospital choices")
+print("Monitor: small, validated RTOS; microkernel-style isolation is attractive if worst-case 10 ms is proven.")
+print("Database: modular Linux or supported hybrid server OS for throughput, drivers, clustering and maintainability.")
+print("\nOS family notes")
+print("Linux: modular monolithic kernel; Windows NT: commonly described as hybrid; Android: Linux kernel plus Android user-space layers; QNX: microkernel; FreeRTOS: small real-time kernel.")

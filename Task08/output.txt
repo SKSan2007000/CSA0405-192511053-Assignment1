@@ -1,0 +1,9 @@
+TASK 8 – Detection latency model (illustrative assumptions)
+Required alarm deadline: 10.00 ms
+Assumed interrupt latency: 0.25 ms
+Polling interval  1 ms: worst detection wait up to 1.00 ms; within 10 ms only if other processing/scheduling delay leaves margin
+Polling interval  5 ms: worst detection wait up to 5.00 ms; within 10 ms only if other processing/scheduling delay leaves margin
+Polling interval 10 ms: worst detection wait up to 10.00 ms; does not meet 10 ms worst-case before other delays
+Polling interval 20 ms: worst detection wait up to 20.00 ms; does not meet 10 ms worst-case before other delays
+Interrupt-driven: approximate detection latency is interrupt latency plus handler, scheduling and processing time.
+Conclusion: interrupts avoid repeated polling and can reduce power, but the complete end-to-end path must be bounded and validated.
