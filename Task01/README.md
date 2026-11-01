@@ -1,1 +1,0 @@
-Run `python3 main.py`. The script prints the ranked requirements for all six environments from the assignment scenario and the single-general-purpose-OS alternative. Complexity: table generation O(E×R), where E is environments and R is ranked requirements; output storage O(E×R).
